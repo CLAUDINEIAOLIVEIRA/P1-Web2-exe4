@@ -1,24 +1,18 @@
-/**
- * P1 - T303 - Programação e Design para Web II
- * Professora: Claudineia Moreira de Oliveira
- * Aluno: Willian | Matrícula: 2521560991008
- * Questão 4 - Exercício 4.1: Layout raiz com Navbar e rodapé
- */
-
-import Navbar from "../components/Navbar";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
-export const metadata = { title: "Questão 4 - Next.js" };
+export const metadata = {
+  title: "Loja Next",
+  description: "Exercício de rotas com o App Router do Next.js",
+};
 
+// O layout envolve todas as páginas, por isso a Navbar aparece em todas elas
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body>
         <Navbar />
-        <main className="conteudo">{children}</main>
-        <footer className="rodape">
-          Willian - T303 - Programação e Design para Web II - P1
-        </footer>
+        <main>{children}</main>
       </body>
     </html>
   );

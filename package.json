@@ -1,6 +1,6 @@
 {
-  "name": "questao4-nextjs",
-  "version": "1.0.0",
+  "name": "rotas-next",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,10 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^15.1.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "author": "Willian",
-  "description": "P1 - T303 - Programação e Design para Web II"
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  }
 }
