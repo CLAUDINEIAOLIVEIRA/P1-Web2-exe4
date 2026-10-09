@@ -273,8 +273,35 @@ Abra `http://localhost:3000`.
 | Digitar `/produtos/999` na barra de endereço | "Exibindo detalhes do produto número: 999" |
 | Clicar em **Voltar para Produtos** | Volta para `/produtos` |
 
+## Como rodar o projeto baixado do GitHub
+
+A pasta `node_modules` não vai para o GitHub, então depois de baixar o projeto é preciso instalar as dependências uma vez.
+
+**1. Baixe o repositório.** Pode ser pelo botão verde **Code > Download ZIP** no GitHub (depois extraia o .zip) ou pelo terminal:
+
+```
+git clone https://github.com/CLAUDINEIAOLIVEIRA/P1-Web2-exe4
+```
+
+**2. Entre na pasta do projeto.** 
+
+```
+cd P1-Web2-exe4
+```
+
+**3. Instale as dependências e rode.**
+
+```
+npm install
+npm run dev
+```
+
+Abra `http://localhost:3000` no navegador.
+
 ## Problemas comuns
 
+- **Erro `Não foi possível encontrar um parâmetro posicional que aceite o argumento` ao usar `cd`**: o nome da pasta tem espaço (por exemplo, `Exercicio 1`). Coloque o caminho entre aspas: `cd "Exercicio 1"`. Outra forma é digitar o começo do nome e apertar **Tab**, que o terminal completa e coloca as aspas sozinho.
+- **Erro `Não é possível localizar o caminho ... porque ele não existe` ao usar `cd`**: o terminal está em outra pasta. Veja o caminho que aparece antes do `>` no terminal. Para subir uma pasta, use `cd ..`.
 - **A página do produto mostra o número vazio**: faltou o `await params` (ou o `async` na função).
 - **`npm run build` dá erro na rota `/produtos/[id]`**: faltou o arquivo `loading.js` dentro da pasta `[id]`.
 - **Erro 404 em `/sobre`**: o arquivo precisa se chamar exatamente `page.js`, dentro da pasta `app/sobre`.
